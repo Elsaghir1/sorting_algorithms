@@ -4,19 +4,19 @@
  * print_array - function that prints n elements of an array of integers,
  * followed by a new line
  *
- * @a: first input
- * @n: second input
+ * @array: first input
+ * @size: second input
  *
  * Return: Always 0.
 */
 
-void print_array(int *a, int n)
+void print_array(const int *array, size_t size)
 {
 	int i;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < size; i++)
 	{
-		printf("%d", a[i]);
+		printf("%d", array[i]);
 		if (i < n - 1)
 			printf(", ");
 	}
